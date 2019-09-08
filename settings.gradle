@@ -1,0 +1,2 @@
+include ':examples', ':treeview'
+rootProject.name='ExpandableRecyclerView'
