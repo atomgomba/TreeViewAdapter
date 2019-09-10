@@ -37,9 +37,9 @@ open class TreeViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder<AnyTreeItemView>, position: Int) =
         with(get(position)) {
-            holder.view.bind(this@with, position)
-            (holder.view as View).setOnClickListener {
-                onItemClicked(holder.view, holder.adapterPosition)
+            holder.treeItemView.bind(this@with, position)
+            holder.itemView.setOnClickListener {
+                onItemClicked(holder.treeItemView, holder.adapterPosition)
             }
         }
 
@@ -138,7 +138,7 @@ open class TreeViewAdapter(
 
     @Suppress("UNCHECKED_CAST")
     open class ViewHolder<T>(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val view: T get() = itemView as T
+        val treeItemView: T get() = itemView as T
     }
 
     private class ListDiffCallback(
