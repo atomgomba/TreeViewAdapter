@@ -22,6 +22,7 @@
         <activity android:name="com.ekezet.example.SimpleActivity" />
         <activity android:name="com.ekezet.example.AnimatedActivity" />
         <activity android:name="com.ekezet.example.AsyncLoadingActivity" />
+        <activity android:name="com.ekezet.example.CustomClickEventActivity" />
     </application>
 
 </manifest>

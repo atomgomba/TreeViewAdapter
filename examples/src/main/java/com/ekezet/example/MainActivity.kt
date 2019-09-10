@@ -27,4 +27,9 @@ class MainActivity : AppCompatActivity() {
     fun onAsyncLoadingExampleClick(view: View) {
         startActivity(Intent(this, AsyncLoadingActivity::class.java))
     }
+
+    @Suppress("UNUSED_PARAMETER")
+    fun onCustomClickEventExampleClick(view: View) {
+        startActivity(Intent(this, CustomClickEventActivity::class.java))
+    }
 }

@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    >
+    tools:ignore="HardcodedText">
 
     <Button
         android:layout_width="match_parent"
@@ -27,6 +27,14 @@
         android:layout_height="wrap_content"
         android:onClick="onAsyncLoadingExampleClick"
         android:text="Async loading list"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCustomClickEventExampleClick"
+        android:text="List with custom click event"
         />
 
 </LinearLayout>
